@@ -3,7 +3,7 @@
 #include <QThread>
 #include <iostream>
 
-#include "src/user/signclass.h"
+#include "src/user/user.h"
 
 int main(int argc, char *argv[])
 {
@@ -13,12 +13,10 @@ int main(int argc, char *argv[])
 
 	QGuiApplication app(argc, argv);
 
+	qmlRegisterType<User>("user", 1, 0, "User");
 	QQmlApplicationEngine engine;
 	engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 	if (engine.rootObjects().isEmpty())
 	return -1;
-
-	SignClass s;
-	s.signUp();
 	return app.exec();
 }

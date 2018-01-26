@@ -4,6 +4,7 @@ import "../../QmlBase" as Base
 Item{
     id:root
     signal goToSignin()
+    signal signUp();
 
     anchors.fill: parent
     Rectangle {
@@ -112,6 +113,7 @@ Item{
         Base.ShadowButton{
             onClicked: {
                 console.log("sign up")
+                signUp();
             }
 
             id:loginButton

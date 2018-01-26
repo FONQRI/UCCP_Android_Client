@@ -6,6 +6,9 @@ Window {
     height: 720
     width: 430
     title: qsTr("Android UCCP")
+
+
+
     Sign.Sign{
 
     }
