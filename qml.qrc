@@ -1,5 +1,11 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>QmlMainPages/Sign/Sign.qml</file>
+        <file>QmlMainPages/Sign/SignIn.qml</file>
+        <file>QmlMainPages/Sign/SignUp.qml</file>
+        <file>QmlBase/ShadowButton.qml</file>
+        <file>QmlBase/ShadowTextField.qml</file>
+        <file>QmlBase/ShadowCard.qml</file>
     </qresource>
 </RCC>
